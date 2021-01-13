@@ -1,38 +1,52 @@
 .App {
-  text-align: center;
+  background-color: rgb(120, 133, 146);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+/* HomePage */
+.HomePage {
+  /* background-color: blue; */
+  min-width: 100vh;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.tag {
+  font-size: 30px;
+  font-family: inconsolata, monospace;
+  color: rgba(250, 235, 215, 0.514);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.center--text {
+  /* background-color: red; */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -60%);
+  line-height: 0px;
+  color: rgb(63, 62, 62);
+}
+
+.center--text h1 {
+  letter-spacing: 0;
+  margin: -10;
+  font-size: 70px;
+  line-height: 50px;
+}
+
+#name {
+  color: antiquewhite;
+}
+
+.center--text h3 {
+  margin-left: -70px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* About Page */
+.AboutPage {
+  min-height: 100vh;
+}
+
+.AboutPage h3 {
+  margin-left: 10%;
 }
