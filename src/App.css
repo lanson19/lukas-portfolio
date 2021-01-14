@@ -2,6 +2,47 @@
   background-color: rgb(120, 133, 146);
 }
 
+/* Side Menu */
+.SideMenuOpen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: blue;
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.SideMenuClosed {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: blue;
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+}
+
+.SideMenu a {
+  font-size: 2rem;
+  text-transform: uppercase;
+  padding: 2rem 0;
+  font-weight: bold;
+  letter-spacing: 0.5rem;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s linear;
+}
+
 /* HomePage */
 .HomePage {
   /* background-color: blue; */
@@ -21,15 +62,15 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -60%);
-  line-height: 0px;
   color: rgb(63, 62, 62);
 }
 
-.center--text h1 {
-  letter-spacing: 0;
-  margin: -10;
+.center--text p {
+  font-size: 30px;
+}
+
+.center--text strong {
   font-size: 70px;
-  line-height: 50px;
 }
 
 #name {
@@ -38,15 +79,69 @@
 
 .center--text h3 {
   margin-left: -70px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 /* About Page */
 .AboutPage {
+  cursor: default;
   min-height: 100vh;
 }
 
 .AboutPage h3 {
   margin-left: 10%;
+}
+
+.about--content {
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+.about--content p {
+  color: antiquewhite;
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.about--content strong {
+  color: rgb(63, 62, 62);
+}
+
+.about--content strong:hover {
+  color: antiquewhite;
+}
+
+/* Works Page */
+.WorksPage {
+  min-height: 100vh;
+}
+
+.WorksPage h3 {
+  margin-left: 10%;
+}
+
+.works--grid {
+  margin-left: 12%;
+  margin-right: 12%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.item {
+  background-color: blue;
+  height: 400px;
+  width: 400px;
+  margin: 20px;
+}
+
+.item:hover {
+  background-color: white;
+  transition: all 0.2s;
+}
+
+/* Contact Page */
+.ContactPage {
+  height: 50vh;
 }
